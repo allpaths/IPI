@@ -1,0 +1,143 @@
+[00:00:01:21 - 00:00:24:01]
+ Okay, this lecture is an introduction to Shannon's information theory. More specifically, we're going to attempt to derive the formula for Shannon's information entropy. And essentially,
+
+[00:00:26:12 - 00:00:35:15]
+ he worked on this in 1948 and he published, well, in 1940s, he published his work in 1948.
+
+[00:00:37:06 - 00:02:56:26]
+ And his problem was to define, formulate a way of quantifying the amount of information extracted from observing an event or the occurrence of an event. And Shannon developed his information theory using an axiomatic approach. So he linked the amount of information extracted from observing an event to the probability of that event of occurring of that specific event. And when I say event, I mean, it could be you could observe a set of symbols, characters in a string, it could be tossing a coin, it could be a genomic sequence, and looking at the probabilities of those nucleotides. Anything, essentially anything that has a probabilistic nature of occurring, any process, any phenomenon, any event, let's call them event, would have some kind of information content associated to it. And we want to determine a mathematical way of extracting this, which is not my work, it's really Shannon's work going to 1940s. So essentially, what Shannon did, apologies, what Shannon did, he developed this theory based on an axiomatic approach. He said that the first axiom is that the information extracted from observing an event must be a function of the probability of that event to occur. So information, we call it I, it's a function of probability.
+
+[00:02:58:00 - 00:04:05:19]
+ Of an event to take place. He also postulated that this information must be zero or positive quantity. It's also a continuous function of probability. So you can differentiate this in respect to probability, this is what it means. The third axiom is that an event that is absolutely certain, which means probability is one or chances of happening are 100%. Then the information extracted from observing this event would be zero. In other words, if an event is absolutely certain, there is no more information you would learn from observing this event, or vice versa.
+
+[00:04:06:24 - 00:04:23:04]
+ If you know everything about something, you don't need any more information to resolve the uncertainty of a given process. So you could see it in reverse if you want. The fourth axiom
+
+[00:04:24:04 - 00:05:14:18]
+ is that if you assume n independent events, each one of them having some probability p, let's say pj of occurring, then the joint probability p is the product of the individual probabilities. So probability p would be p1, product p2, p3, pn. And then the information that we get from observing the entire set of any events is the sum of the individual events information. In other words, information extracted from observing the entire set is
+
+[00:05:16:07 - 00:05:33:29]
+ information of the product of individual event probabilities to occur. And that is further written as the sum of individual
+
+[00:05:37:20 - 00:06:17:22]
+ informations extracted per each, sorry, information pn per each event. Okay. And this is how Shannon began constructing essentially his information theory based on this axiomatic approach. If you look carefully at these four axioms, so I forgot to mention this, to understand this lecture, one needs to have some basic knowledge of algebra, logarithms,
+
+[00:06:19:03 - 00:06:49:03]
+ statistics. It's not much required, but it is an assumption that you would have some degree of knowledge of these things. So this is implied. So if you look at these four axioms, the only function that actually ticks all the boxes, it's a logarithmic function. That's why I said you need to have a bit of knowledge about these functions and algebra and things. So in other words,
+
+[00:06:51:05 - 00:07:34:29]
+ for an event that has probability p to occur, the information extracted is a function of that probability and is given by the logarithm in some base p of that probability. There is a minus in front of the logarithm because we defined information in axiom two as a positive value and probability is a fractional value. So essentially it will give you a negative value. So there you need to put a minus there. You can bring the minus back into the logarithm as log base b p to power minus one. And one more time we can rewrite it log b of one over p.
+
+[00:07:36:10 - 00:08:17:16]
+ And this is what Shannon said is the information that you take from observing an event taking place, which has a probability p of occurring. What is this base now b? The base b has an important function, essentially gives the units of information. So if b, b cannot be one, obviously b needs to be a number, a positive number larger than one.
+
+[00:08:18:21 - 00:08:26:16]
+ If b equals two, you get units of bits. So information is measured in bits. And this is
+
+[00:08:27:27 - 00:08:51:14]
+ when essentially Shannon gave us the units of digital information content, the units of bits, they come from exactly this theoretical development. If b, the base of the logarithm, is free, you get something called treats. And an interesting choice is b equals
+
+[00:08:52:28 - 00:09:42:01]
+ e, the number e or the Euler number. And that will give you units of knots. Okay. In reality, the choice of the base, it's almost irrelevant because one can change the base of a logarithm in a trivial way from one base to another. And the formula, let's take this one more time. I'm going to write here information function of probability. And let's write it like log b, one over p. Okay. If you want to change the base from b to some other number a, the formula is
+
+[00:09:43:15 - 00:10:06:12]
+ log base a of one over p, one over probability, divided by log base a of b. So the base of the initial logarithm becomes argument in the second logarithm with the second base.
+
+[00:10:07:25 - 00:10:58:11]
+ And it's actually, I might show how this comes about. Okay, so it's here is in the field of view the formula. So I'm going to write one more time, the information of p equals log base b, one over p. And let's call this x some, some quantity x. What it means, it means that one over p equals b to power x, that comes from logarithms. And now we apply a log in base a, we apply a log operation in base a, the new base, we want to change from b to a,
+
+[00:10:59:22 - 00:12:57:14]
+ to the left and to the right of this equation. Okay. So let's do that. So we have log base a of one over p equals log base a of b to power x. This one, we can take x out. So we can say that this is x times log base a b. Okay. But what is x? Well, x is defined here, x is log base b of one over p. Okay, so let's rewrite everything. Log base a of one over p equals x is log base b, one over p times log base a b. So remember, the objective was to derive, to change the base of our initial log b of one over p to change the base to a. So that gives us the final relation, log base b of one over p, the base change formula is we take this term log a one over p divided by log base a of b. And this is how you change the base of a logarithm, which means the choice of base when you define information, it's a relative, quite a relative thing, because you could convert into different bases using this formula. For example, if one wants to
+
+[00:12:59:27 - 00:13:18:09]
+ convert the information expressed in knots, in bits, for example, then you have b equal two, you have a equal the Weiler number. Okay. And then as an example, then information
+
+[00:13:19:13 - 00:15:24:03]
+ of a function of this probability p would be ln of, so that's natural logarithm of one over p. And this is in units of knots. Let's put here in square brackets, the units. Okay, we want to change this into bits, that would become ln two times log, this time is base two of one over p. And this is in units of bits. You need to remember that when I say ln of something, like ln two, essentially what I mean, I mean log base two of two, log based e, I'm sorry, log based e, Weiler number of two. When I say ln one over p, I really mean it's a shortcut of writing log base e of one over p. Okay, so sorry about the earlier confusion. Okay. So this is where we are with this. So we have now some kind of means of, and some kind of approach to define what is the amount of information one can learn from extracting a, from observing a process of a given probability p. The question is now is, how do we estimate the total amount of information contained in a message that has n characters, or you could redefine it as how do we extract the amount of information
+
+[00:15:25:05 - 00:16:12:01]
+ contained in a process of any events, each having a probability of occurring. Okay, so you could think of this in terms of messages and letters and characters as in Shannon, but you could think of this in terms of events. And I like the events approach because it brings it closer to physics and we need this later. Okay, so in order to derive this Shannon information content for a set of events or n characters, which actually Shannon called information entropy. Okay, this is what is called information. We're going to attempt to derive that now. So to do that, we first need to introduce a few things. So let's say we have n
+
+[00:16:13:13 - 00:18:10:00]
+ total number of events or single characters. Let's go back to characters for a moment. We have n of them, and these are x1, x2, x3, and xn. This is the set of characters that we have in a message. But these characters, they could be duplicates, triplicates, and so on and so on. It could be repeats of some of the characters. It doesn't necessarily mean they're all different to each other. Okay, so now we introduce a number u capital, which is the total number of distinct single character events in a set. So that means you have x1, x2, and xu. This is another subset of the bigger set. We call this set x, and it contains only distinct characters. Okay, this should be contained in this interval. This u should be defined by this condition. Okay, so as a simple example, let's take x1, x2, x3. Let's say we have five characters, x4 and x5. Our message has five characters. And the message is the characters are a, a, t, q, m. Okay, this is that means we have n equal five. But what is x? x is a, t, q, m. In other words, only the unique or distinct characters
+
+[00:18:11:08 - 00:19:02:03]
+ are in the the subset x, which gives us u equal equals four. So we have a set of five characters, but actually the u is only four. And that's how you should understand the distinction between n and u. We call hx the information entropy. Okay, so for the set of u distinct characters, this x, x1, x2, xu, we can define a probability, a discrete probability distribution
+
+[00:19:03:20 - 00:19:59:19]
+ for each event, so p u. So probability of event x1 to occur is p1, probability of event x2 is p2 and so on. Obviously, these pj probabilities are zero or positive values. And there is a normalization condition, let's say j equal one to u of summation over pj should be one. So the sum of all these discrete probabilities should be should be one. That's the so-called normalization condition. And we want to estimate the amount of information one gets from each character, the average information for each character in the set. Okay, so if we observe,
+
+[00:20:01:06 - 00:20:22:00]
+ let's say we observe symbol xj, you will have pj probability. And you will get an information given by log of one over pj. This is from observing these ones. But if we have
+
+[00:20:23:14 - 00:21:05:07]
+ n observations, then we are going to have n times pj occurrences of the symbol xj. Okay. So in other words, for n independent observations, okay, one would get the total information extracted would be a quantity i for information. And that would be we do a summation over j equal one to u. And
+
+[00:21:06:21 - 00:21:35:05]
+ this is pj times n, the number of occurrences times how many times the information pair occurrence. So this would be an xj taking place. And then the information extracted from observing that xj, which is log one over pj, the product of that and we do the summation over all the distinct
+
+[00:21:36:16 - 00:21:51:20]
+ possibilities there. Okay. I dropped the base of the logarithm. This is implied is a base b or if you choose it to that would be units of bits and so on and so on. So from this
+
+[00:21:52:28 - 00:22:10:13]
+ relation, we now how do you get the information extracted per character. So you divide this expression by n. Okay. And you have information divided by n equals one over n.
+
+[00:22:11:21 - 00:23:50:13]
+ And then we copy the summation like this of pj times n log one over pj. It looks like this. You can observe that n, it doesn't depend on j. So n can come out of this, and it reduces with that one. So what is left is the information pair character is we call this a HX function and is given by summation j from one to u over what is left pj log one over pj. Okay. To make it look a little bit better, we're going to rewrite this as HX equals minus summation over j of pj times log I'm going to put the base now log b, pj. I brought the base back base b in the logarithm like this. And this is called the Shannon information entropy or the information content pair character
+
+[00:23:51:15 - 00:24:05:11]
+ when a set of n characters is observed once or a set of n events takes place n times.
+
+[00:24:07:04 - 00:24:25:06]
+ Why is it called Shannon information entropy is because this resembles almost perfectly the the thermodynamic entropy of a system.
+
+[00:24:28:13 - 00:24:50:10]
+ With the exception that in the thermodynamic formula, there is a Boltzmann constant in front of this summation. It's a minus KB Boltzmann constant times exactly this formula with the probabilities and the logarithm. The logarithm is a natural base logarithm is ln. So it resembles very much so it's called Shannon information entropy, but essentially this has units of bits.
+
+[00:24:53:04 - 00:25:45:15]
+ So it's not joules per Kelvin and it's fundamentally different to the entropy of a thermodynamic system. It has units of bits and it gives you an information content pair character. Remember we have n characters in our set. The total information we call it e-tot maybe information i.i. total information would be the product of information content pair character which is the Shannon information entropy this hx function times how many characters you have in your set n. So n times hx gives the total information content
+
+[00:25:48:09 - 00:26:33:17]
+ when observing a message of n characters or a set of n events. And that is more or less everything about this information entropy business. We need to remind a few things. For example if pj is 1, so if an event is absolutely certain, it has probability 1 of occurring, that means hx is 0 and this is because log in any base of 1 will give you 0.
+
+[00:26:35:16 - 00:27:03:15]
+ So you learn nothing, you get no information or you don't need any information to resolve uncertainty of a process that is 100% certain. That's how you should read it. But what happens if pj equals 0? So an event that has zero probability of occurring it also gives you no information. But this time we can't really say because
+
+[00:27:05:17 - 00:27:15:06]
+ log of a in base b of 0 is prohibited, it's a fallacy. So you cannot compute that.
+
+[00:27:16:10 - 00:28:30:22]
+ But what you can do, you can do limit let's say k goes to 0 of product k log 1 over k. So this is you can work this out and this is quite known in mathematics. The limit of this function is 0. So we can safely say that pj log 1 over pj goes to 0 if pj goes to 0. So an event that has zero probability will give you no information whatsoever. An event that has it's absolutely certain it will give you no information whatsoever. And you can extract information for situations in between these two extremes. Okay, the final bit now is to clarify that this Shannon information entropy or content per event if you want.
+
+[00:28:31:26 - 00:29:41:24]
+ Let's rewrite it one more time minus j summation to u pj log base b pj. Okay, this refers to a discrete probability distribution for these events. If you have a continuous probability distribution, so you have a p probability distribution that this is a big X, this is a small X. You have a p function of X and it's a continuous probability distribution, then Shannon information entropy for that specific case is HX, essentially change the summation to an integration. So you will be minus and you have integration over px times log base b px dx. And this is the Shannon information entropy for a continuous probability distribution.
+
+[00:29:43:15 - 00:29:47:01]
+ Before I wrap it up, the final thing is to discuss
+
+[00:29:50:07 - 00:30:58:18]
+ what is the maximum for a given set of events or for a given message, what is the maximum information entropy or information content per character one can extract what is the maximum value, there is a specific value for that. And it turns out that appears when all events, all X, j events have pj probabilities, that they are all equal, okay equal to some, some constant, okay, some some value, they're all equal, all pj's are equal, all events take place with the same probability. Okay. So this happens when imagine you have let's say you have a set of free, free events or a message of three letters, x1, x2, x3. And this is they will have, that's all you have. So probability p1
+
+[00:31:00:16 - 00:32:34:28]
+ to extract one of these characters from the set would be one over three. So, and that would be equal to p2, that would be equal to p3. So the probability of finding any of these characters, or the probability of occurrence of any of these characters is one over three, and they're all equal. Okay, what it means it means this set x is actually x actually equals u, because the number of characters in this set would be free. And that appear that coincides with the number of distinct characters as well equals also free, okay, you could have a situation where that is not the case and you have x1, let's say x2, x2, x2, x1, x3, x3, something like this. This would be a set where you have 1234567, you have n equals seven. And this is your x, this is your set of n characters, what is the set u of distinct characters? If you want to write u, then you will have x1, x2, and x3. Okay, so in this case, u equals free. But the total number of characters in your set is number seven. Okay.
+
+[00:32:36:03 - 00:33:31:00]
+ So the when when the number of events or the number of characters equals the number of distinct, it's exactly the number of distinct or, or the number of reoccurrences of each character is equal for all of them. In other words, they all have the same probability of occurring. So this is one over three, which is u, you can generalize this as pj equals one over u. Okay, so that is the condition that you need to fulfill pj equals one over u. If that is the case, then the let's write now. So here is the formula. Okay, that's the formula. And we say pj equals one over u. Okay, so what do we have we have h x is minus.
+
+[00:33:32:28 - 00:34:02:16]
+ Let's write everything j equal one u. And then instead of pj, we say one over u times log one over u. Okay. And this is minus one over u times what is left is the summation j u log one over u.
+
+[00:34:04:10 - 00:34:44:26]
+ There is no dependence on j. So we can rewrite everything as essentially minus one over u times its summation of something constant, how many times u times, so it will be u times that term log one over u. This goes, so that means h x, it takes a maximum volume log b u. And this corresponds for the situation when all events or all characters
+
+[00:34:46:00 - 00:34:52:26]
+ have identical probability one over u. Okay, this is called the maximum Shannon information entropy
+
+[00:34:55:15 - 00:35:08:22]
+ of a given set. When is the maximum, if you want the maximum scrambled of the letters, they all occur with equal probability. There is no duplications there or imbalances in your
+
+[00:35:11:01 - 00:35:19:07]
+ set. And this is more or less all I wanted to cover here. Next, we're going to do some examples.
+
+[00:35:20:08 - 00:35:20:22]
+ Thank you.
