@@ -2,6 +2,8 @@
 
 An instructional Jupyter notebook deriving Shannon Information Entropy from first principles, based on Shannon's 1948 axiomatic approach.
 
+### 📺 [Watch the original lecture on YouTube](https://youtu.be/cuCEOOQgCLU)
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/allpaths/IPI/HEAD?filepath=IPI_1_Shannon_Entropy.ipynb)
 
 ## Contents
